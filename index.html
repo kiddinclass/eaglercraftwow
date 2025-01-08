@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html>
+<style>
+button {
+display: block;
+margin: 0 auto;
+width: 200px;
+height: 50px;
+
+}
+.large-text {
+font-size: 4em;
+text-align: center;
+}
+
+body { background-image: url('gif.gif'); background-size: cover; /* Adjust the size of the background image */ background-repeat: no-repeat; /* Prevent the background image from repeating */ background-position: center; /* Center the background image */ height: 100vh; /* Set the height to fill the viewport */ margin: 0; /* Remove default margin */ }
+</style>
 <head>
     <title>Boxy's Things :D</title>
     <script>
@@ -9,9 +24,14 @@
     </script>
 </head>
 <body>
-    <h1>Boxy's Things :D</h1>
-    <button onclick="goToDirectory('Kone')">Kone Client</button>
-    <button onclick="goToDirectory('Unblocker')">Unblocker</button>
-    <button onclick="goToDirectory('Eagler')">Normal Eaglercraft</button>
+    <h1 class = "large-text">Boxy's Things :D</h1>
+    <br>    
+    <div class = "container">
+        <button onclick="goToDirectory('Kone')">Kone Client</button>
+        <br>
+        <button onclick="goToDirectory('Unblocker')">Unblocker</button>
+        <br>
+        <button onclick="goToDirectory('Eagler')">Normal Eaglercraft</button>
+    </div>
 </body>
 </html>
