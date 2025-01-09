@@ -3,20 +3,28 @@
 <style>
 button {
 display: block;
-margin: 0 auto;
-width: 200px;
 height: 50px;
-
+width: 200px;
+background: linear-gradient(to right, gray, white);padding: 15px 32px;
+border-radius: 0px 15px 15px 0px;
+border: none;
+color: black;
+font-size: 12px;
+font-family: "Courier New";
 }
 .large-text {
 font-size: 4em;
-text-align: center;
+color: white;
+font-family: "Courier New";
 }
-
+    
 body { background-image: url('gif.gif'); background-size: cover; /* Adjust the size of the background image */ background-repeat: no-repeat; /* Prevent the background image from repeating */ background-position: center; /* Center the background image */ height: 100vh; /* Set the height to fill the viewport */ margin: 0; /* Remove default margin */ }
+
+html, body { overflow: hidden; height: 100%; }
 </style>
+
 <head>
-    <title>Boxy's Things :D</title>
+    <title>Untitled Document</title>
     <script>
         function goToDirectory(directory) {
             window.location.href = directory + '/index.html';
@@ -24,14 +32,12 @@ body { background-image: url('gif.gif'); background-size: cover; /* Adjust the s
     </script>
 </head>
 <body>
-    <h1 class = "large-text">Boxy's Things :D</h1>
+    <h1 class = "large-text">Boxy's Cheats</h1>
     <br>    
-    <div class = "container">
-        <button onclick="goToDirectory('Kone')">Kone Client</button>
-        <br>
-        <button onclick="goToDirectory('Unblocker')">Unblocker</button>
-        <br>
-        <button onclick="goToDirectory('Eagler')">Normal Eaglercraft</button>
-    </div>
+    <button onclick="goToDirectory('Kone')">Kone Client</button>
+    <br>
+    <button onclick="goToDirectory('Unblocker')">Unblocker</button>
+    <br>
+    <button onclick="goToDirectory('Eagler')">Normal Eaglercraft</button>
 </body>
 </html>
